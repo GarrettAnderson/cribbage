@@ -11,13 +11,19 @@ let deckOfCardsURL = 'https://deckofcardsapi.com/api/deck/new/shuffle/?deck_coun
 //     console.log('here is the json', deckOfCards)
 //   ).catch(err => throw err);
 
-  fetch(deckOfCardsURL)
+
+fetch(deckOfCardsURL)
     .then(response => response.json())
-    .then(data => {
-      console.log(data);
-      deckOfCards = data
-    })
+    .then(data => deckOfCards = data)
+    .then(() => console.log(deckOfCards))
+
+
+ function dealPlayerOneCards () {
 
 
 
-console.log(deckOfCards)
+
+     }
+dealPlayerOneCards()
+
+// console.log(playerOneDeck)
