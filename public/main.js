@@ -4,6 +4,7 @@
 let deckOfCards
 let deckOfCardsURL = 'https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1'
 
+let drawCard = 'https://deckofcardsapi.com/api/deck/<<DECKID>>/draw/?count=2'
 // fetch(deckOfCardsURL)
 //   .then(res => res.json())
 //   .then(cards =>
@@ -19,7 +20,6 @@ fetch(deckOfCardsURL)
 
 
  function dealPlayerOneCards () {
-
 
 
 
