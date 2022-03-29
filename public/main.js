@@ -1,6 +1,6 @@
 
 // fetch request to pull in the data for the card Deck
- 
+
 let deckOfCardsURL = 'https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1'
 
 // fetch(deckOfCardsURL)
@@ -11,11 +11,13 @@ let deckOfCardsURL = 'https://deckofcardsapi.com/api/deck/new/shuffle/?deck_coun
 //   ).catch(err => throw err);
 
 
-fetch(deckOfCardsURL)
+let deckOfCards = fetch(deckOfCardsURL)
     .then(response => response.json())
-    .then(data => deckOfCards = data)
-    .then(() => console.log(deckOfCards))
-
+    .then(data => {
+      return data
+    })
+    // .then(() => console.log(deckOfCards))
+console.log(deckOfCards)
 
 let drawCard = 'https://deckofcardsapi.com/api/deck/<<DECKID>>/draw/?count=2'
 
