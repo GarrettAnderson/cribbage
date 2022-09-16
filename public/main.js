@@ -1,7 +1,8 @@
 
 // fetch request to pull in the data for the card Deck
 
-let deckOfCardsURL = 'https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1'
+// let deckOfCardsURL = 'https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1'
+  let deckOfCards = 'https://www.deckofcardsapi.com/api/deck/new/'
 
 // fetch(deckOfCardsURL)
 //   .then(res => res.json())
